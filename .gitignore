@@ -1,0 +1,9 @@
+node_modules
+dist
+docs
+coverage
+*.local
+.history
+.vscode
+.eslintcache
+undone

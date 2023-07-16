@@ -1,0 +1,15 @@
+###
+ # @Author: 风行
+ # @Date: 2023-07-16
+ # @LastEditors: 风行
+ # @LastEditTime: 2023-07-16
+ # @Description: file content
+ # @FilePath: /rollup-demo/.husky/commit-msg_副本
+### 
+#!/bin/sh
+
+# shellcheck source=./_/husky.sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx --no-install commitlint --edit "$1"
+

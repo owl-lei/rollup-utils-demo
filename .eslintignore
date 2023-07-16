@@ -1,0 +1,6 @@
+*.min.*
+gulpfile.js
+dist
+docs
+coverage
+undone

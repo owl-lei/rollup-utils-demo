@@ -1,7 +1,6 @@
 {
-  "name": "rollup-demo",
+  "name": "rollup-utils-demo",
   "version": "1.0.0",
-  "description": "",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "index.d.ts",
@@ -17,11 +16,15 @@
     "prepare": "husky install",
     "prepublishOnly": "pnpm run build"
   },
-  "keywords": [],
-  "author": "",
+  "author": "雷厉",
+  "description": "rollup打包工具包demo",
+  "keywords": [
+    "rollup"
+  ],
+  "homepage": "https://github.com/owl-lei/rollup-utils-demo/blob/main/README.md",
   "license": "MIT",
   "engines": {
-    "node": ">=16"
+    "node": ">=16.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.9",
@@ -75,8 +78,9 @@
   },
   "files": [
     "dist",
-    "*.d.ts",
-    "CHANGELOG.md"
+    "docs",
+    "coverage",
+    "*.d.ts"
   ],
   "lint-staged": {
     "*.{js,ts}": [

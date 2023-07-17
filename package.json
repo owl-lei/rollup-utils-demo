@@ -6,6 +6,7 @@
   "module": "dist/index.mjs",
   "types": "index.d.ts",
   "scripts": {
+    "push": "git cz",
     "build": "gulp",
     "rollup:dev": "rollup --config rollup.config.ts --configPlugin rollup-plugin-typescript2 --watch",
     "rollup:build": "rollup --config rollup.config.ts --configPlugin rollup-plugin-typescript2",
@@ -13,7 +14,8 @@
     "test": "vitest run",
     "coverage": "vitest run --coverage",
     "lint:lint-staged": "lint-staged",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "pnpm run build"
   },
   "keywords": [],
   "author": "",
@@ -51,6 +53,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "fs-extra": "^11.1.1",
     "gulp": "^4.0.2",
+    "gulp-conventional-changelog": "^3.0.0",
     "husky": "7.0.4",
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
@@ -72,7 +75,8 @@
   },
   "files": [
     "dist",
-    "*.d.ts"
+    "*.d.ts",
+    "CHANGELOG.md"
   ],
   "lint-staged": {
     "*.{js,ts}": [

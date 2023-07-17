@@ -4,7 +4,7 @@
  * @LastEditors: 风行
  * @LastEditTime: 2023-07-16
  * @Description: file content
- * @FilePath: /rollup-demo/src/getGuid/index.test.ts
+ * @FilePath: /rollup-utils-demo/src/getGuid/index.test.ts
  */
 import { expect, test } from 'vitest';
 import { getGuid } from './index';

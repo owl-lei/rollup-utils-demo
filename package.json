@@ -76,12 +76,6 @@
       "types": "./index.d.ts"
     }
   },
-  "files": [
-    "dist",
-    "docs",
-    "coverage",
-    "*.d.ts"
-  ],
   "lint-staged": {
     "*.{js,ts}": [
       "eslint --fix",
@@ -98,5 +92,8 @@
     "commitizen": {
       "path": "node_modules/cz-customizable"
     }
+  },
+  "publishConfig": {
+    "registry": "http://127.0.0.1:4873/"
   }
 }

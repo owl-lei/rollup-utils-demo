@@ -73,3 +73,13 @@ pnpm i typedoc -D
   ],
 
 ```
+
+## 上传私包
+
+```bash
+#上传
+npm publish --registry http://127.0.0.1:4873
+
+#删除
+npm unpublish --force yourPackage --registry http://127.0.0.1:4873
+```

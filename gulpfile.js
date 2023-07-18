@@ -2,7 +2,7 @@
  * @Author: 风行
  * @Date: 2023-07-16
  * @LastEditors: 风行
- * @LastEditTime: 2023-07-16
+ * @LastEditTime: 2023-07-17
  * @Description: gulp自动化构建
  * @FilePath: /rollup-utils-demo/gulpfile.js
  */
@@ -129,8 +129,7 @@ const changeLog = () => {
 };
 
 exports.default = gulp.series(
-  // [goTest, clearLibFile, createDoc, handleRollup, changeLog],
-  [changeLog],
+  [goTest, clearLibFile, createDoc, handleRollup, changeLog],
   (done) => {
     log.progress('编译成功');
     done();

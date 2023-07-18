@@ -1,0 +1,25 @@
+/*
+ * @Author: 风行
+ * @Date: 2023-07-17
+ * @LastEditors: 风行
+ * @LastEditTime: 2023-07-18
+ * @Description: file content
+ * @FilePath: /rollup-utils-demo/.npmignore 
+ */
+node_modules
+dist
+coverage
+*.local
+.history
+.vscode
+.eslintcache
+undone
+pnpm-lock.yaml
+*.d.ts
+
+//  "files": [
+//     "dist",
+//     "docs",
+//     "coverage",
+//     "*.d.ts"
+//   ],
